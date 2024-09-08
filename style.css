@@ -1,0 +1,100 @@
+* {   
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: black;
+    background-color: rgba(216, 205, 129, 0.802);
+} 
+
+.info h1 {
+    align-items: center; 
+    margin-bottom: 30px;
+    padding-top: 20px;
+    color: rgb(229, 151, 7);
+    font-size: 40px;
+    text-decoration: underline;
+} 
+
+h2 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.info img {
+    height: 600px;
+    width: auto;
+    justify-content: center;
+    max-width: 100%; /* Makes the image responsive */
+} 
+
+.me {
+    margin-bottom: 50px;
+}
+
+.my-journey,
+.hobbies,
+.contact {
+    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* Adjusts width for responsiveness */
+}
+
+/* Adjust hr line */
+hr {
+    border-color: orange;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .info img {
+        height: auto;
+        width: 100%; /* Ensures the image takes full width on smaller screens */
+    }
+
+    .my-journey,
+    .hobbies,
+    .contact {
+        width: 90%; /* Increases the width for smaller screens */
+    }
+
+    * {
+        font-size: 20px; /* Reduces the overall font size */
+    }
+
+    .info h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .info img {
+        height: auto;
+        width: 100%; /* Full width image for mobile */
+    }
+
+    .my-journey,
+    .hobbies,
+    .contact {
+        width: 100%; /* Makes the width full for mobile devices */
+    }
+
+    * {
+        font-size: 18px; /* Further reduces font size for small screens */
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
